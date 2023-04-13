@@ -1,0 +1,131 @@
+.nav {
+  background-color: $espresso;
+  width: 100%;
+  position: fixed;
+  height: 125px;
+}
+.nav--display {
+  display: inline-block;
+  position: absolute;
+}
+.nav__logo {
+  display: inline-block;
+  width: 15.2rem;
+  height: 15.2rem;
+  margin-left: -0.7rem;
+  margin-top: -1rem;
+}
+.nav__bar {
+  top: 50px;
+  left: 14.5rem;
+  width: 50.2rem;
+  height: 3.2rem;
+  border-radius: 1rem;
+  background-color: $secondary-color;
+}
+.nav__bar .nav__bar-in {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc(100% - 3rem);
+  height: 100%;
+  border-radius: inherit;
+  border: none;
+  outline: none;
+  padding-left: 1.9rem;
+}
+::placeholder {
+  position: relative;
+  display: inline-block;
+  width: 7.3rem;
+  height: 3.2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: $nobel;
+}
+.nav__cart {
+  right: 18.2rem;
+}
+.nav__menu {
+  right: 12.8rem;
+}
+.nav__cart,
+.nav__menu {
+  width: 1.8rem;
+  height: 1.8rem;
+  top: 4.9rem;
+}
+.nav__cart-img,
+.nav__menu-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+// dropdown
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s linear 0s;
+}
+.nav__drop-Menu {
+  position: absolute;
+  background-color: $espresso;
+  width: 38.3rem;
+  height: 70.1rem;
+  border-radius: 1rem;
+  border: 0.6rem solid $golden;
+  padding: 15.6rem 5.2rem 5.1rem 5.6rem;
+  top: 0;
+  left: 98rem;
+  opacity: 0;
+  z-index: 99;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s linear 0s;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s linear 0s;
+}
+.nav__drop-close {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  top: 6.2rem;
+  left: 30.1rem;
+}
+.nav__drop-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav__drop-menu a {
+  width: 18.8rem;
+  height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: $secondary-color;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+li:not(:first-of-type) {
+  margin-top: 2.3rem;
+}
