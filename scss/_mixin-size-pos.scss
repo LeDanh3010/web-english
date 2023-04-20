@@ -1,0 +1,12 @@
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin alignLeft($top, $left) {
+  top: $top;
+  left: $left;
+}
+@mixin alignRight($top, $right) {
+  top: $top;
+  right: $right;
+}
