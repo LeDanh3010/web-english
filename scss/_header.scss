@@ -1,19 +1,21 @@
-.ctn {
-  width: 100%;
-  height: 5.4rem;
+// import mixin style size and position
+@import "mixin-size-pos";
+// style header
+.header {
+  @include size(100%, 5.4rem);
   background-color: $golden;
+  &__text {
+    position: relative;
+    @include alignLeft(0, 0);
+    @include size(100%, 100%);
+  }
 }
-.ctn__text {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.ctn__text .ctn--mod {
+// style position to object img
+.header__text .header--mod {
   position: absolute;
 }
-.ctn__text a {
+// style tabs a
+.header__text a {
   text-decoration: none;
   font-size: 1.8rem;
   color: $espresso;
@@ -21,58 +23,60 @@
   top: 50%;
   transform: translateY(-50%);
 }
-.ctn__icon-phone {
-  width: 1.8rem;
-  height: 1.76rem;
-  top: 1.76rem;
-  left: 1rem;
+// style icon phone
+.header__icon-phone {
+  @include size(1.8rem, 1.76rem);
+  @include alignLeft(1.76rem, 1rem);
 }
-.ctn__text-phone {
+// style text phone
+.header__text-phone {
   width: 21.1rem;
   left: 3.7rem;
 }
-.ctn__icon-mail {
-  width: 2.4rem;
-  height: 2.347rem;
-  left: 27.7rem;
-  top: 1.467rem;
+// style icon mail
+.header__icon-mail {
+  @include size(2.4rem, 2.347rem);
+  @include alignLeft(1.467rem, 27.7rem);
 }
-.ctn__text-mail {
+// style icon mail
+.header__text-mail {
   width: 22.8rem;
   left: 30.5rem;
 }
-.ctn__icon-lag {
-  width: 2rem;
-  height: 1.956rem;
-  left: 54.5rem;
-  top: 1.76rem;
+// style icon language
+.header__icon-lag {
+  @include size(2rem, 1.956rem);
+  @include alignLeft(1.76rem, 54.5rem);
 }
-.ctn__text-lag {
+// style text language
+.header__text-lag {
   width: 3.7rem;
-  height: 2.2rem;
   left: 57.3rem;
 }
-.ctn__icon-user {
-  width: 1.8rem;
-  height: 1.8rem;
-  right: 18.3rem;
-  top: 1.8rem;
+// style icon user
+.header__icon-user {
+  @include size(1.8rem, 1.8rem);
+  @include alignRight(1.8rem, 18.3rem);
 }
-.ctn__text-user {
+// style text user
+.header__text-user {
   width: 6.6rem;
   right: 9.6rem;
 }
-.ctn__text-sign {
+// style text sign up
+.header__text-sign {
   width: 7.3rem;
   right: 1.4rem;
 }
+// responsive mobile width < 740px
 @media only screen and (max-width: 46.1875em) {
-  .ctn__text {
+  .header__text {
     display: none;
   }
 }
+// responsive tablet width >= 740px and width < 1024px
 @media only screen and (min-width: 46.1875em) and (max-width: 63.9375em) {
-  .ctn__text {
+  .header__text {
     display: none;
   }
 }
