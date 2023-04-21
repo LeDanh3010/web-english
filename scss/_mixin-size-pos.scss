@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin size($width, $height) {
   width: $width;
   height: $height;
@@ -19,3 +20,26 @@
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
+=======
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin alignLeft($top, $left) {
+  top: $top;
+  left: $left;
+}
+@mixin alignRight($top, $right) {
+  top: $top;
+  right: $right;
+}
+@mixin font($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+@mixin displayFlex($justifyContent, $alignItems) {
+  display: flex;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+>>>>>>> 921429263ce833c2ae00f2e05eb3e7eae6bbd986
