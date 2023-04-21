@@ -5,40 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tieng anh khong quau</title>
+    <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!-- custom css -->
     <link rel="stylesheet" type="text/css" href="/scss/style.css" />
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- custom js -->
     <script src="js/style.js"></script>
   </head>
   <body>
+    <!-- overlay -->
+    <div class="overlay"></div>
     <!-- header -->
-    <header class="ctn">
-      <section class="ctn__text">
-        <img src="icon/phone.png" alt="#" class="ctn__icon-phone ctn--mod" />
-        <a href="#" class="ctn__text-phone ctn--mod">Hotline: +12345678901</a>
-        <img src="icon/mail.png" alt="#" class="ctn__icon-mail ctn--mod" />
-        <a href="#" class="ctn__text-mail ctn--mod">E-mail: abc@gmail.com</a>
-        <img src="icon/language.png" alt="#" class="ctn__icon-lag ctn--mod" />
-        <a href="#" class="ctn__text-lag ctn--mod">EN</a>
-        <img src="icon/login.png" alt="#" class="ctn__icon-user ctn--mod" />
-        <a href="#" class="ctn__text-user ctn--mod">Log In</a>
-        <a href="#" class="ctn__text-sign ctn--mod">Sign Up</a>
+    <header class="header">
+      <section class="header__text">
+        <img
+          src="icon/phone.png"
+          alt="#"
+          class="header__icon-phone header--mod"
+        />
+        <a href="#" class="header__text-phone header--mod"
+          >Hotline: +12345678901</a
+        >
+        <img
+          src="icon/mail.png"
+          alt="#"
+          class="header__icon-mail header--mod"
+        />
+        <a href="#" class="header__text-mail header--mod"
+          >E-mail: abc@gmail.com</a
+        >
+        <img
+          src="icon/language.png"
+          alt="#"
+          class="header__icon-lag header--mod"
+        />
+        <a href="#" class="header__text-lag header--mod">EN</a>
+        <img
+          src="icon/login.png"
+          alt="#"
+          class="header__icon-user header--mod"
+        />
+        <a href="#" class="header__text-user header--mod">Log In</a>
+        <a href="#" class="header__text-sign header--mod">Sign Up</a>
       </section>
     </header>
     <!-- navigation -->
     <nav class="nav">
-      <!-- overlay -->
-      <section class="overlay"></section>
+      <!-- Logo -->
       <figure class="nav__logo">
         <img src="img/brand.png" alt="#" />
       </figure>
+      <!-- Search Bar -->
       <section class="nav__bar nav--display">
         <input
           class="nav__bar-in"
@@ -47,17 +74,21 @@
         />
         <i class="fa-solid fa-magnifying-glass fa-xl nav__bar-icon"></i>
       </section>
+      <!-- Cart Icon -->
       <a href="#" class="nav__cart nav--display"
         ><img src="icon/icon_shopping.png" alt="#" class="nav__cart-img"
       /></a>
+      <!-- Menu Icon -->
       <a href="#" id="dropdown" class="nav__menu nav--display">
         <img src="icon/icon_menu.png" alt="#" class="nav__menu-img" />
       </a>
-      <!-- dropdown -->
+      <!-- Dropdown Menu -->
       <section class="nav__drop-Menu">
+        <!-- Close Button -->
         <a href="#" id="close" class="nav__drop-close">
           <img src="icon/icon_menu.png" alt="#" />
         </a>
+        <!-- Menu Items -->
         <ul class="nav__drop-menu">
           <li><a href="#">Introduction</a></li>
           <li><a href="#">Honored Nominees</a></li>
@@ -71,17 +102,163 @@
         </ul>
       </section>
     </nav>
+    <!-- slide show -->
     <section class="img__Slide">
       <section class="img__slide">
-        <figure class="img__slide-first img__slide--bcg"></figure>
-        <figure class="img__slide-second img__slide--bcg"></figure>
-        <figure class="img__slide-third img__slide--bcg"></figure>
+        <figure class="img__slide-first img__slide--style"></figure>
+        <figure class="img__slide-second img__slide--style"></figure>
+        <figure class="img__slide-third img__slide--style"></figure>
       </section>
       <section class="btn">
-        <button type="button"><img src="icon/button.png" alt="#" /></button>
-        <button type="button"><img src="icon/button.png" alt="#" /></button>
-        <button type="button"><img src="icon/button.png" alt="#" /></button>
+        <span class="btn__it1 btn--hover"></span>
+        <span class="btn__it2 btn--hover"></span>
+        <span class="btn__it3 btn--hover"></span>
       </section>
+      <!-- get started -->
+      <span class="get-start"><a href="#">get started</a></span>
     </section>
+    <!-- main content -->
+    <article class="content">
+      <!-- content Nominees -->
+      <section class="content__nomi">
+        <section class="primary">
+          <h2 class="primary__title">Honored Nominees</h2>
+          <p class="primary__desc">
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+            below for those interested. Sections 1.10.32 and 1.10.33 from "de
+            Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+            exact original form, accompanied by English versions from the 1914
+            translation by H. Rackham.
+          </p>
+        </section>
+        <section class="secondary">
+          <section class="secondary__It1">
+            <figure class="secondary__it-img"></figure>
+            <h3 class="secondary__it-name">name</h3>
+            <p class="secondary__it-desc">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </section>
+          <section class="secondary__It2">
+            <figure class="secondary__it-img"></figure>
+            <h3 class="secondary__it-name">name</h3>
+            <p class="secondary__it-desc">
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout.
+            </p>
+          </section>
+          <section class="secondary__It3">
+            <h3 class="secondary__it3-title">MONTHLY TEST 11/2022</h3>
+            <img src="icon/calendar.png" class="secondary__it3-icon" alt="" />
+            <figure class="secondary__it3-img"></figure>
+          </section>
+        </section>
+      </section>
+      <!-- content Courses -->
+      <section class="content__courses">
+        <section class="primary">
+          <h2 class="primary__title">Courses</h2>
+          <p class="primary__desc">
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+            below for those interested. Sections 1.10.32 and 1.10.33 from "de
+            Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+            exact original form, accompanied by English versions from the 1914
+            translation by H. Rackham.
+          </p>
+        </section>
+        <!-- tabs courses -->
+        <section class="info">
+          <section class="tabs">
+            <span class="tabs__all">all</span>
+            <span class="tabs__course1">course 1</span>
+            <span class="tabs__course2">course 2</span>
+            <span class="tabs__course3">course 3</span>
+            <span class="tabs__course4">course 4</span>
+          </section>
+          <!-- price information -->
+          <section class="price">
+            <section class="price__it1 price__it">
+              <figure class="price__it1-img price__it-img"></figure>
+              <aside class="Name__course">
+                <span class="Name__course-name">name</span>
+                <span class="Name__course-duration">duration</span>
+              </aside>
+              <aside class="price-detail">
+                <span class="price-detail__it1">$1500</span>
+                <span class="price-detail__it2">$1500</span>
+                <span class="price-detail__it3">Price</span>
+                <span class="price-detail__it4">Price</span>
+              </aside>
+            </section>
+            <section class="price__it2 price__it">
+              <figure class="price__it2-img price__it-img"></figure>
+              <aside class="Name__course">
+                <span class="Name__course-name">name</span>
+                <span class="Name__course-duration">duration</span>
+              </aside>
+              <aside class="price-detail">
+                <span class="price-detail__it1">$1500</span>
+                <span class="price-detail__it2">$1500</span>
+                <span class="price-detail__it3">Price</span>
+                <span class="price-detail__it4">Price</span>
+              </aside>
+            </section>
+            <section class="price__it3 price__it">
+              <figure class="price__it3-img price__it-img"></figure>
+              <aside class="Name__course">
+                <span class="Name__course-name">name</span>
+                <span class="Name__course-duration">duration</span>
+              </aside>
+              <aside class="price-detail">
+                <span class="price-detail__it1">$1500</span>
+                <span class="price-detail__it2">$1500</span>
+                <span class="price-detail__it3">Price</span>
+                <span class="price-detail__it4">Price</span>
+              </aside>
+            </section>
+            <section class="price__it4 price__it">
+              <figure class="price__it4-img price__it-img"></figure>
+              <aside class="Name__course">
+                <span class="Name__course-name">name</span>
+                <span class="Name__course-duration">duration</span>
+              </aside>
+              <aside class="price-detail">
+                <span class="price-detail__it1">$1500</span>
+                <span class="price-detail__it2">$1500</span>
+                <span class="price-detail__it3">Price</span>
+                <span class="price-detail__it4">Price</span>
+              </aside>
+            </section>
+            <section class="price__it5 price__it">
+              <figure class="price__it5-img price__it-img"></figure>
+              <aside class="Name__course">
+                <span class="Name__course-name">name</span>
+                <span class="Name__course-duration">duration</span>
+              </aside>
+              <aside class="price-detail">
+                <span class="price-detail__it1">$1500</span>
+                <span class="price-detail__it2">$1500</span>
+                <span class="price-detail__it3">Price</span>
+                <span class="price-detail__it4">Price</span>
+              </aside>
+            </section>
+            <section class="price__it6 price__it">
+              <figure class="price__it6-img price__it-img"></figure>
+              <aside class="Name__course">
+                <span class="Name__course-name">name</span>
+                <span class="Name__course-duration">duration</span>
+              </aside>
+              <aside class="price-detail">
+                <span class="price-detail__it1">$1500</span>
+                <span class="price-detail__it2">$1500</span>
+                <span class="price-detail__it3">Price</span>
+                <span class="price-detail__it4">Price</span>
+              </aside>
+            </section>
+          </section>
+        </section>
+      </section>
+    </article>
   </body>
 </html>
