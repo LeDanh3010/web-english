@@ -1,0 +1,37 @@
+// import mixin style size and position and display flex
+@import "mixin-size-pos";
+// style dash
+@mixin style-dash() {
+  content: "";
+  position: absolute;
+  @include size(14.4rem, 0.6rem);
+  @include alignLeft(11.5rem, 50%);
+  transform: translateX(-50%);
+  background-color: $golden;
+}
+// style title
+@mixin primary-style() {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@mixin title-style() {
+  color: $golden;
+  @include font(3.5rem, 700);
+  text-transform: uppercase;
+  @include displayFlex(center, center);
+}
+
+@mixin desc-style() {
+  width: 100%;
+  bottom: 0;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 2.2rem;
+  position: absolute;
+}

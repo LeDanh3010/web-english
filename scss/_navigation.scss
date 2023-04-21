@@ -1,0 +1,197 @@
+// import mixin style size and position
+@import "mixin-size-pos";
+// style navigation
+.nav {
+  @include size(100%, 12.5rem);
+  background-color: $espresso;
+  position: relative;
+  // make logo
+  &__logo {
+    @include size(15.2rem, 15.2rem);
+    display: inline-block;
+    margin-left: -0.7rem;
+    margin-top: -1rem;
+  }
+  // make search bar
+  &__bar {
+    @include size(50.2rem, 3.2rem);
+    @include alignLeft(5rem, 14.5rem);
+    border-radius: 1rem;
+    background-color: $secondary-color;
+  }
+}
+// style class navigation display
+.nav--display {
+  display: inline-block;
+  position: absolute;
+}
+// style search bar
+.nav__bar .nav__bar-in {
+  position: relative;
+  @include alignLeft(0, 0);
+  @include size(calc(100% - 3rem), 100%);
+  border-radius: inherit;
+  border: none;
+  outline: none;
+  padding-left: 1.9rem;
+}
+// style place holder
+::placeholder {
+  position: relative;
+  display: inline-block;
+  @include size(7.3rem, 3.2rem);
+  @include font(1.5rem, 300);
+  line-height: 1.8rem;
+  color: $nobel;
+}
+// make icon cart,menu
+.nav__cart {
+  right: 18.2rem;
+}
+.nav__menu {
+  right: 12.8rem;
+}
+.nav__cart,
+.nav__menu {
+  @include size(1.8rem, 1.8rem);
+  top: 4.9rem;
+}
+.nav__cart-img,
+.nav__menu-img {
+  position: relative;
+  @include size(100%, 100%);
+}
+// dropdown
+.overlay {
+  position: absolute;
+  @include alignLeft(0, 0);
+  @include size(100%, 100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s linear 0s;
+}
+.nav__drop-Menu {
+  position: absolute;
+  background-color: $espresso;
+  @include size(38.3rem, 70.1rem);
+  @include alignLeft(0, 98rem);
+  border-radius: 1rem;
+  border: 0.6rem solid $golden;
+  padding: 15.6rem 5.2rem 5.1rem 5.6rem;
+  opacity: 0;
+  z-index: 99;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s linear 0s;
+}
+// effect visible
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s linear 0s;
+}
+// make style close dropdown
+.nav__drop-close {
+  position: absolute;
+  @include size(1.8rem, 1.8rem);
+  @include alignLeft(6.2rem, 30.1rem);
+}
+// make menu dropdown
+.nav__drop-menu {
+  position: relative;
+  @include alignLeft(0, 0);
+  @include size(100%, 100%);
+  @include displayFlex(flex-end, flex-end);
+  list-style-type: none;
+  flex-direction: column;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav__drop-menu a {
+  @include size(18.8rem, 2.7rem);
+  @include displayFlex(flex-end, center);
+  text-decoration: none;
+  color: $secondary-color;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+li:not(:first-of-type) {
+  margin-top: 2.3rem;
+}
+
+// responsive mobile width < 740px
+@media only screen and (max-width: 46.1875em) {
+  .ctn {
+    height: 10.7rem;
+  }
+  .nav {
+    height: 16.2rem;
+  }
+  .nav__bar {
+    display: none;
+  }
+  .nav__cart {
+    right: 22.5rem;
+  }
+  .nav__menu {
+    right: 8.5rem;
+  }
+  .nav__cart,
+  .nav__menu {
+    width: 3rem;
+    height: 3rem;
+    top: 7.4rem;
+  }
+  .nav__logo {
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+  }
+}
+// responsive tablet width >= 740px and width < 1024px
+@media only screen and (min-width: 46.1875em) and (max-width: 63.9375em) {
+  .ctn {
+    height: 10.7rem;
+  }
+  .nav {
+    height: 16.2rem;
+  }
+  .nav__bar {
+    display: none;
+  }
+  .nav__cart {
+    right: 22.5rem;
+  }
+  .nav__menu {
+    right: 8.5rem;
+  }
+  .nav__cart,
+  .nav__menu {
+    width: 3rem;
+    height: 3rem;
+    top: 7.4rem;
+  }
+  .nav__logo {
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+  }
+}
+// @media only screen and (max-width: 63.9375em) {
+//   .nav {
+//     height: 16.2rem;
+//   }
+//   .nav__bar {
+//     display: none;
+//   }
+//   .nav__cart {
+//     right: 22.5rem;
+//   }
+//   .nav__menu {
+//     right: 8.5rem;
+//   }
+//   .nav__cart,
+//   .nav__menu {
+//     width: 3rem;
+//     height: 3rem;
+//     top: 7.4rem;
+//   }
+// }

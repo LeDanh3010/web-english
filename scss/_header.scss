@@ -1,0 +1,82 @@
+// import mixin style size and position
+@import "mixin-size-pos";
+// style header
+.header {
+  @include size(100%, 5.4rem);
+  background-color: $golden;
+  &__text {
+    position: relative;
+    @include alignLeft(0, 0);
+    @include size(100%, 100%);
+  }
+}
+// style position to object img
+.header__text .header--mod {
+  position: absolute;
+}
+// style tabs a
+.header__text a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: $espresso;
+  height: 2.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+// style icon phone
+.header__icon-phone {
+  @include size(1.8rem, 1.76rem);
+  @include alignLeft(1.76rem, 1rem);
+}
+// style text phone
+.header__text-phone {
+  width: 21.1rem;
+  left: 3.7rem;
+}
+// style icon mail
+.header__icon-mail {
+  @include size(2.4rem, 2.347rem);
+  @include alignLeft(1.467rem, 27.7rem);
+}
+// style icon mail
+.header__text-mail {
+  width: 22.8rem;
+  left: 30.5rem;
+}
+// style icon language
+.header__icon-lag {
+  @include size(2rem, 1.956rem);
+  @include alignLeft(1.76rem, 54.5rem);
+}
+// style text language
+.header__text-lag {
+  width: 3.7rem;
+  left: 57.3rem;
+}
+// style icon user
+.header__icon-user {
+  @include size(1.8rem, 1.8rem);
+  @include alignRight(1.8rem, 18.3rem);
+}
+// style text user
+.header__text-user {
+  width: 6.6rem;
+  right: 9.6rem;
+}
+// style text sign up
+.header__text-sign {
+  width: 7.3rem;
+  right: 1.4rem;
+}
+// responsive mobile width < 740px
+@media only screen and (max-width: 46.1875em) {
+  .header__text {
+    display: none;
+  }
+}
+// responsive tablet width >= 740px and width < 1024px
+@media only screen and (min-width: 46.1875em) and (max-width: 63.9375em) {
+  .header__text {
+    display: none;
+  }
+}
