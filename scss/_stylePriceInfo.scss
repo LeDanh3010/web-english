@@ -1,0 +1,16 @@
+// import mixin style size and position and display flex
+@import "mixin-size-pos";
+// style price information
+@mixin style_price() {
+  @include size(27rem, 42.2rem);
+  border: 0.6rem solid $golden;
+  padding: 2rem 2.3rem 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+// style price thumbnail
+@mixin style_thumbnail() {
+  @include size(100%, 19.4rem);
+}
