@@ -26,7 +26,7 @@
 }
 
 @mixin desc-style() {
-  width: 100%;
+  @include size(100%, 8.4rem);
   bottom: 0;
   font-size: 1.8rem;
   display: flex;

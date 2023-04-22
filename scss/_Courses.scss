@@ -1,0 +1,132 @@
+//import style of title and description
+@import "styleTitle";
+// import mixin style size and position and display flex
+@import "mixin-size-pos";
+// style courses
+.content__courses .primary {
+  height: 23.9rem;
+  @include primary-style();
+}
+//style dash
+.content__courses .primary::before {
+  @include style-dash();
+  top: 11.6rem;
+}
+//style title
+.content__courses .primary__title {
+  @include size(22.1rem, 3.2rem);
+  @include title-style();
+  margin-top: 5.7rem;
+}
+// style description
+.content__courses .primary__desc {
+  @include desc-style();
+}
+// make style tabs
+.tabs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0 15px;
+  padding: 3.5rem 0 4.6rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  &__all {
+    @include size(5.4rem, 3.2rem);
+    color: $nobel;
+    font-weight: 300;
+  }
+}
+.tabs span:not(:first-of-type) {
+  @include size(8.4rem, 3.2rem);
+}
+.tabs span {
+  @include displayFlex(center, center);
+}
+
+.tabs__course1,
+.tabs__course2,
+.tabs__course3,
+.tabs__course4 {
+  font-weight: 300;
+  color: $nobel;
+}
+.style_underline {
+  font-weight: 700;
+  border-bottom: 0.3rem solid $golden;
+  color: black;
+}
+// style price information
+.price {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 422px;
+  column-gap: 9.5rem;
+  row-gap: 2.5rem;
+  padding: 0 8.5rem;
+  font-size: 1.8rem;
+  // style price item1
+  &__it {
+    @include size(27rem, 42.2rem);
+    border: 0.6rem solid $golden;
+    padding: 2rem 2.3rem 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  //item image
+  &__it-img {
+    @include size(100%, 19.4rem);
+  }
+  &-detail {
+    @include size(100%, 9.7rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+}
+//part text of price information
+.Name__course {
+  @include size(100%, 9.2rem);
+  text-transform: capitalize;
+  @include displayFlex(space-between, center);
+}
+.Name__course-name,
+.price-detail__it1,
+.price-detail__it2 {
+  @include size(10.5rem, 3.2rem);
+  font-weight: 700;
+}
+.Name__course-duration,
+.price-detail__it3,
+.price-detail__it4 {
+  font-weight: 300;
+  @include size(9.8rem, 3.7rem);
+}
+
+.Name__course-duration,
+.price-detail__it2,
+.price-detail__it4 {
+  @include displayFlex(flex-end, center);
+}
+.Name__course-name,
+.price-detail__it1,
+.price-detail__it3 {
+  @include displayFlex(flex-start, center);
+}
+// style order number
+.tabs__num {
+  @include size(100%, 7.2rem);
+  padding-top: 4rem;
+  @include font(1.8rem, 300);
+  @include displayFlex(center, center);
+  gap: 0 2rem;
+  color: $nobel;
+  cursor: pointer;
+  &-style {
+    @include size(3.5rem, 100%);
+    @include displayFlex(center, center);
+  }
+}

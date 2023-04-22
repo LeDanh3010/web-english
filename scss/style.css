@@ -14,6 +14,11 @@ body {
   padding: 0;
 }
 
+.content {
+  width: 100%;
+  padding: 0 13.4rem 0 13.6rem;
+}
+
 .header {
   width: 100%;
   height: 5.4rem;
@@ -436,6 +441,7 @@ li:not(:first-of-type) {
 
 .content__nomi .primary__desc {
   width: 100%;
+  height: 8.4rem;
   bottom: 0;
   font-size: 1.8rem;
   display: flex;
@@ -533,11 +539,6 @@ li:not(:first-of-type) {
   border: 1px solid black;
 }
 
-.content {
-  width: 100%;
-  padding: 0 13.4rem 0 13.6rem;
-}
-
 .content__courses .primary {
   height: 23.9rem;
   display: flex;
@@ -574,6 +575,7 @@ li:not(:first-of-type) {
 
 .content__courses .primary__desc {
   width: 100%;
+  height: 8.4rem;
   bottom: 0;
   font-size: 1.8rem;
   display: flex;
@@ -593,6 +595,12 @@ li:not(:first-of-type) {
   font-size: 1.8rem;
   text-transform: capitalize;
 }
+.tabs__all {
+  width: 5.4rem;
+  height: 3.2rem;
+  color: #969696;
+  font-weight: 300;
+}
 
 .tabs span:not(:first-of-type) {
   width: 8.4rem;
@@ -603,13 +611,6 @@ li:not(:first-of-type) {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.tabs__all {
-  width: 5.4rem;
-  height: 3.2rem;
-  color: #969696;
-  font-weight: 300;
 }
 
 .tabs__course1,
@@ -636,7 +637,6 @@ li:not(:first-of-type) {
   padding: 0 8.5rem;
   font-size: 1.8rem;
 }
-
 .price__it {
   width: 27rem;
   height: 42.2rem;
@@ -646,10 +646,17 @@ li:not(:first-of-type) {
   flex-wrap: wrap;
   align-content: flex-start;
 }
-
 .price__it-img {
   width: 100%;
   height: 19.4rem;
+}
+.price-detail {
+  width: 100%;
+  height: 9.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
 }
 
 .Name__course {
@@ -677,15 +684,6 @@ li:not(:first-of-type) {
   height: 3.7rem;
 }
 
-.price-detail {
-  width: 100%;
-  height: 9.7rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: flex-end;
-}
-
 .Name__course-duration,
 .price-detail__it2,
 .price-detail__it4 {
@@ -700,4 +698,120 @@ li:not(:first-of-type) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.tabs__num {
+  width: 100%;
+  height: 7.2rem;
+  padding-top: 4rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2rem;
+  color: #969696;
+  cursor: pointer;
+}
+.tabs__num-style {
+  width: 3.5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__aboutUs .primary {
+  height: 21.4rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.content__aboutUs .primary::before {
+  content: "";
+  position: absolute;
+  width: 14.4rem;
+  height: 0.6rem;
+  top: 11.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fdc300;
+  top: 9.5rem;
+}
+
+.content__aboutUs .primary__title {
+  width: 23.9rem;
+  height: 3.2rem;
+  color: #fdc300;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.content__aboutUs .primary__desc {
+  width: 100%;
+  height: 8.4rem;
+  bottom: 0;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 2.2rem;
+  position: absolute;
+}
+
+.images__slide {
+  width: 100%;
+  height: 49.8rem;
+  position: relative;
+}
+
+.images__slide figure {
+  width: 100%;
+  height: 47.7rem;
+  position: absolute;
+  bottom: 0;
+  background-size: cover;
+}
+
+.images__slide-it1 {
+  background-image: url("/img/about1.jpg");
+}
+
+.images__slide-it2 {
+  background-image: url("/img/about2.jpg");
+}
+
+.images__slide-it3 {
+  background-image: url("/img/about3.jpg");
+}
+
+.btn__slide {
+  width: 100%;
+  height: 5.8rem;
+  padding-top: 4rem;
+}
+
+.btn__slide span {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: black;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn__slide span:nth-of-type(2) {
+  margin: 0 0.6rem;
 }/*# sourceMappingURL=style.css.map */
